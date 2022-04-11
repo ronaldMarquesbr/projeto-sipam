@@ -1,7 +1,7 @@
 import { Container, Brand, Menu, MenuItem } from "./styles";
 import logoSipamImg from "../../assets/logo-sipam.png";
 
-import { FiUserPlus, FiClipboard } from "react-icons/fi"
+import { FiUserPlus } from "react-icons/fi"
 import { AiFillHome, AiFillSetting,AiFillContainer } from "react-icons/ai"
 
 export function SideBar(){
@@ -9,7 +9,7 @@ export function SideBar(){
         <Container >
             <Brand>
                 <img src={logoSipamImg} alt="Logo SIPAM" />
-                <h2>SM</h2>
+                <h2>SISMAX</h2>
             </Brand>
 
             <Menu>

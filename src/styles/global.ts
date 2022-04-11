@@ -11,7 +11,7 @@ export const GlobalStyle = createGlobalStyle`
         --dark: #191923;
 
         -warning: #e63946; 
-        --background: #f1faee;
+        --background: #EAF1F5;
         --shapes: #FFFFFF;
         --text-title: #3D3D4D;
         --text: #1C1C29;
