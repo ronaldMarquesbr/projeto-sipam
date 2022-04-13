@@ -45,10 +45,19 @@ export const GlobalStyle = createGlobalStyle`
         text-decoration: none;
     }
 
-    .container-app{
+    .app-container{
         display: flex;
         width: 100vw;
         height: 100vh;
         padding: 1rem .5rem;
+    }
+
+    .content-container{
+        width: 1200px;
+        height: 100%;
+        align-self: center;
+
+        border-radius: 1.8rem;
+        background-color: var(--blue-200);
     }
 `;

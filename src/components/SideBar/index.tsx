@@ -3,6 +3,7 @@ import logoSipamImg from "../../assets/logo-sipam.png";
 
 import { FiUserPlus } from "react-icons/fi"
 import { AiFillHome, AiFillSetting,AiFillContainer } from "react-icons/ai"
+import { Link } from "react-router-dom";
 
 export function SideBar(){
     return(
@@ -14,31 +15,31 @@ export function SideBar(){
 
             <Menu>
                 <MenuItem isSelected="true">
-                    <a href="#">
+                    <Link to="/app">
                         <AiFillHome />
                         Dashboard
-                    </a>
+                    </Link>
                 </MenuItem>
 
                 <MenuItem> 
-                    <a href="#">
+                    <Link to="/app">
                         <FiUserPlus />
                         Cadastro
-                    </a>
+                    </Link>
                 </MenuItem>
 
                 <MenuItem>
-                    <a href="#">
+                    <Link to="consulta">
                         <AiFillContainer />
                         Consulta
-                    </a>
+                    </Link>
                 </MenuItem>
 
                 <MenuItem>
-                    <a href="#">
+                    <Link to="/app">
                         <AiFillSetting />
                         Configurações
-                    </a>
+                    </Link>
                 </MenuItem>
             </Menu>
         </Container>

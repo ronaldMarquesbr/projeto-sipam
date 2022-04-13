@@ -1,6 +1,7 @@
 import { Container, LoginCard, Form, Brand } from "./styles";
 
-import logoImg from "../../assets/logo-sipam.png"
+import logoImg from "../../assets/logo-sipam.png";
+
 
 export function Login(){
     return(

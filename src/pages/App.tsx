@@ -1,11 +1,18 @@
+import { ReactNode } from "react";
 import { SideBar } from "../components/SideBar";
-import { Dashboard } from "../components/Dashboard";
+import  { Outlet } from "react-router-dom"
 
-function App() {
+interface props {
+  children?: ReactNode
+}
+
+function App({ children } : props) {
   return (
-    <div className="container-app">
-      <SideBar />
-      <Dashboard />
+    <div className="app-container">
+      <SideBar /> 
+      <div className="content-container">
+        <Outlet />
+      </div>
     </div>
   );
 }

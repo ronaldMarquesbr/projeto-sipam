@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import backgroundImg from "../../assets/background.webp";
 
 export const Container = styled.div`
     width: 100vw;
@@ -8,15 +9,19 @@ export const Container = styled.div`
     align-items: center;
     justify-content: center;
 
-    background-color: var(--blue-900);
+    /* background-color: var(--blue-900); */
+    background-image: url(${backgroundImg});
+    background-repeat: no-repeat;
+    background-size: cover;
 `; 
 
 export const LoginCard = styled.div`
     width: 500px;
-    height: 600px;
-    padding: 1rem 2.5rem;
+    padding: 1rem 2rem 5rem 2rem;
 
+    border-radius: 1rem;
     background-color: var(--background);
+    box-shadow: 0 2px .5rem .3rem rgba(0,0,0,.1);
 `;
 
 export const Form = styled.form`
@@ -79,6 +84,8 @@ export const Brand = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+
+    margin: 1rem 0 2rem 0;
     
 
     img {
