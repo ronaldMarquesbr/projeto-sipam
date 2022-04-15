@@ -10,9 +10,12 @@ export const GlobalStyle = createGlobalStyle`
 
         --dark: #191923;
 
-        -warning: #e63946; 
+        --warning: #ffc300;
+        --warning-light: rgba(255,195,0, .1); 
+
+        --danger: #e63946; 
         --background: #EAF1F5;
-        --shapes: #FFFFFF;
+        --shapes: #f8f9fa;
         --text-title: #3D3D4D;
         --text: #1C1C29;
         --text-light: #666;
