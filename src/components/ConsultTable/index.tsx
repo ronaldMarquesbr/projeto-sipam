@@ -1,5 +1,6 @@
-import { Table, Container, StatusField, SearchButton, Pagination } from "./styles";
-import { BsCircleFill } from "react-icons/bs"
+import { Table, Container, StatusField, SearchButton, Pagination, PrintButton } from "./styles";
+import { BsCircleFill, BsPrinter } from "react-icons/bs"
+
 
 export function ConsultTable(){
     return(
@@ -49,9 +50,13 @@ export function ConsultTable(){
                     </tr>
                 </tbody>
             </Table>
-            <Pagination>
-                <a href="#">Previous</a><span>1</span><a href="#">Next</a>
-            </Pagination>
+            <div className="table-footer">
+                <PrintButton>Imprimir<BsPrinter /></PrintButton>
+
+                <Pagination>
+                    <a href="#">Previous</a><span>1</span><a href="#">Next</a>
+                </Pagination>
+            </div>
         </Container>
     )
 }
